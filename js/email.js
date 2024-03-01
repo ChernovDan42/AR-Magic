@@ -11,7 +11,7 @@ function sendEmail(e) {
   const body = 'You have a new email subscription from: ' + email;
 
   const mailtoLink =
-    'mailto:logi5702733@gmail.com' +
+    'mailto:armagic.agency@gmail.com' +
     '?subject=' +
     encodeURIComponent(subject) +
     '&body=' +

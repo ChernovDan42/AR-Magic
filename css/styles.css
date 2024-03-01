@@ -29,16 +29,20 @@ height: auto;
 }
 
 .container {
+    max-width: 375px;
     padding-top: 122px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 122px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .container {
+    max-width: fit-content;
+    width: 768px;
     padding-top: 122px;
     padding-left: 60px;
     padding-right: 60px;
@@ -47,9 +51,29 @@ height: auto;
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+   
+}
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+   
+}
+}
+
+@media screen and (min-width: 1280px)  {
    .info-section {
     display: flex;
     justify-content: space-between;
+    width: 1118px;
+} 
+}
+@media screen  and (min-width:1440px) {
+   .info-section {
+  
+    width: auto;
 } 
 }
 
@@ -91,13 +115,19 @@ height: auto;
     display: block;
     margin-bottom: 18px;
 
-    max-width: 420px;
+    width: 280px;
     height: 40px;
     border-radius: 12px;
     border: 1px solid #111;
 
     padding-left: 10px;
 
+}
+
+@media screen and (min-width:768px) {
+    .email-input{
+        width: 420px;
+    }
 }
 
 
@@ -115,36 +145,60 @@ height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 122px;
+    
+    margin-bottom: 50px;
 }
 
-@media screen and (min-width:769px) and (max-width: 1279px) {
- .qr-block{
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .qr-block{
+    position: relative;
     display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 122px;
+    flex-direction: row;
+    align-items: center;
+   
 }
 }
+
+@media screen and (min-width:1440px){
+    .qr-block{
+   margin-left: 95px;
+   
+}
+}
+
+
 
 
 .qr-border {
     position: absolute;
-order: 2;
 top: 0;
 right: 0;
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     border: 1px solid #111;
     border-radius: 23px;
-    margin-left: auto;
+  
 }
 
+@media screen and (min-width:768px) {
+  .qr-border {
+left: 42px;
+  
+}
+}
+
+@media screen and (min-width:1440px) {
+  .qr-border {
+width: 360px;
+height: 360px;
+  
+}
+}
+
+
 .qr-image {
-    
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     z-index: 2;
     border: 1px solid #111;
     border-radius: 23px;
@@ -152,25 +206,66 @@ right: 0;
     margin-top: 31px;
 }
 
+
+@media screen and (min-width: 768px) {
+    .qr-image{
+        margin-right: 55px;
+        margin-left: 55px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+  .qr-image {
+
+margin-right: 0;
+margin-left: 0; 
+  
+}
+}
+
+@media screen and (min-width:1440px) {
+  .qr-image {
+width: 360px;
+height: 360px;
+
+
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    .ar-logo{
+        display: none;
+    }
+}
+
 .ar-logo {
     position: absolute;
     top: -49px;
-    right: 270px;
+    left: 0px;
 
     width: 182px;
     height: 173px;
 
 }
 
+@media screen and (min-width: 1280px) {
+    .ar-logo{
+        top: -49px;
+    left: -49px;
+    }
+}
+
+
 .qr-text-info {
     max-width: 402px;
+    margin-top: 30px;
     order: 1;
 }
 
 @media screen and (min-width: 1280px) {
 .qr-text-info {
-    margin-top: 69px;
-    margin-bottom: 38px;
+    margin-top: 31px;
     order: 3;
 }
 }
@@ -180,13 +275,43 @@ right: 0;
 
 
 .photo-block{
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
    
     
 }
 
-.sample-img{
-    width: 210px;
-    height: 376px;
+@media screen and (min-width: 1280px) {
+    .photo-block{
+        gap:13px
+    }
 }
+
+@media screen and (min-width: 1440px) {
+    .photo-block{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.sample-img{
+    width: 320px;
+    height: 500px;
+    object-fit: contain;
+}
+
+@media screen and (min-width:768px) {
+    .sample-img{
+        width: 310px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sample-img{
+        width: 221px;
+        height: 378px;
+    }
+}   
