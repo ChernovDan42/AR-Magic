@@ -13,6 +13,10 @@ czechref.addEventListener('click', translateToCzech);
 ukRef.addEventListener('click', translateToEnglish);
 
 function translateToUkrainian() {
+  ukraineRef.classList.add('active');
+  czechref.classList.remove('active');
+  ukRef.classList.remove('active');
+
   firstP.innerHTML =
     '<span class="brand-title">AR-MAGIC</span>запрошує вас зануритись в світ новітніх технологій доповненої реальності.';
   secondP.innerHTML =
@@ -28,6 +32,10 @@ function translateToUkrainian() {
 }
 
 function translateToCzech() {
+  ukraineRef.classList.remove('active');
+  czechref.classList.add('active');
+  ukRef.classList.remove('active');
+
   firstP.innerHTML =
     '<span class="brand-title">AR-MAGIC</span>vás zve, abyste se ponořili do světa nejnovějších technologií rozšířené reality.';
   secondP.innerHTML =
@@ -43,6 +51,10 @@ function translateToCzech() {
 }
 
 function translateToEnglish() {
+  ukraineRef.classList.remove('active');
+  czechref.classList.remove('active');
+  ukRef.classList.add('active');
+
   firstP.innerHTML =
     '<span class="brand-title">AR-MAGIC</span>invites you to immerse yourself in the world of the latest technologies of augmented reality.';
   secondP.innerHTML =

@@ -145,7 +145,14 @@ height: auto;
     background-color: #111;
     color: #fff;
     cursor: pointer;
+    transition: color 0.2s ease-in-out,background-color 0.3s ease-in-out;
 }
+
+.send-email-btn:hover{
+    color: #111;
+    background-color: #fff;
+}
+
 
 
 .qr-block{
@@ -338,9 +345,17 @@ height: 360px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flag:hover{
+    transform: scale(1.2);
 }
 
 .ukraine {
   background: linear-gradient(#105bbc 50%, #ffd600 0);
 }
 
+.active{
+    transform: scale(1.2);
+}
