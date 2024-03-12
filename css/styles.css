@@ -81,12 +81,19 @@ height: auto;
     max-width: 821px;
 }
 
+
+
 @media screen and (max-width: 1280px) {
  .info-and-email-wrap {
     margin-bottom: 100px;
 }
 }
 
+@media screen and (min-width: 1280px) and (max-width:1439px) {
+ .info-and-email-wrap {
+    padding-right: 50px;
+}
+}
 
 
 .brand-title {
@@ -315,3 +322,25 @@ height: 360px;
         height: 378px;
     }
 }   
+
+.flags-box{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    position: absolute;
+    top: 30px;
+}
+
+.flag {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ukraine {
+  background: linear-gradient(#105bbc 50%, #ffd600 0);
+}
+
